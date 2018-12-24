@@ -1,0 +1,25 @@
+@import './variables';
+@import './grid';
+@import './styles/test';
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: bisque;
+
+  &__row {
+    background-color: #ffeead;
+
+    & > div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: cadetblue;
+      padding: 5px;
+      border: solid 1px crimson;
+      margin: 10px 0;
+    }
+  }
+}
