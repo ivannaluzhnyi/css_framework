@@ -1,16 +1,21 @@
-@import './variables';
-@import './grid';
-@import './styles/test';
+@import 'variables';
+@import 'functions';
+@import 'fonts';
+@import 'grid';
+@import 'style-guide';
+
 
 * {
   box-sizing: border-box;
 }
 
+
 .container {
   background-color: bisque;
 
-  &__row {
+  & .row {
     background-color: #ffeead;
+    width: 100%;
 
     & > div {
       display: flex;

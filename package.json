@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w src/ -o public/"
+    "sass": "node-sass -w src/ -o public/css/",
+    "sass-build": "node-sass -r --output-style compressed scss/index.scss -o public/css/"
   },
   "author": "Ivan Naluzhnyi",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "sass-flex-mixin": "^1.0.3"
   }
 }
